@@ -1,14 +1,14 @@
-﻿<script type="text/javascript">
+<script type="text/javascript">
 	var cont = 0;
 	function resizeText(multiplier) {
 	if (cont >= 4){
 		if (multiplier==1){
-			return;
+			return; //não permite o usuário aumentar o tamanho original da letra mais do que quatro vezes
 		}
 	}
 	else if (cont <= -2){
 		if (multiplier==-1){
-			return;
+			return; //não permite o usuário diminuir o tamanho original da letra mais do que duas vezes
 		}
 	}
 	var elementos = document.getElementsByClassName("conteudo");
@@ -20,6 +20,3 @@
 	cont+=multiplier;
 }</script>
 
-<a href="javascript:void(0);" onclick="resizeText(1)" id="plustext">Aumentar texto</a>
-| 
-<a href="javascript:void(0);" onclick="resizeText(-1)" id="minustext">Diminuir texto</a>
