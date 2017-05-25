@@ -3,12 +3,12 @@
 	function resizeText(multiplier) {
 	if (cont >= 4){
 		if (multiplier==1){
-			return; //não permite o usuário aumentar o tamanho original da letra mais do que quatro vezes
+			return; /*não permite o usuário aumentar o tamanho original da letra mais do que quatro vezes*/
 		}
 	}
 	else if (cont <= -2){
 		if (multiplier==-1){
-			return; //não permite o usuário diminuir o tamanho original da letra mais do que duas vezes
+			return; /*não permite o usuário diminuir o tamanho original da letra mais do que duas vezes*/
 		}
 	}
 	var elementos = document.getElementsByClassName("conteudo");
